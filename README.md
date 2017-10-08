@@ -31,10 +31,15 @@ python data_analysis.py
 The result we get shows:
 > Here is a sample for the data:
 >['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29']
+
 >Here are the information of our data:
+
 >There are totally 25000 transactions.
+
 >There are 11427 kinds of product.
+
 >The most frequent product appear 14198 times.
+
 >The mean appearance times of product is 22.65432747002713 times.
 
 ## Algorithm brief introduction 
