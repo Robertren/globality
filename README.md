@@ -30,14 +30,14 @@ python data_analysis.py
 ```
 The result we get shows:
 > Here is a sample for the data:
-=========================================
-['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29']
-Here are the information of our data:
-=========================================
-There are totally 25000 transactions.
-There are 11427 kinds of product.
-The most frequent product appear 14198 times.
-The mean appearance times of product is 22.65432747002713 times.
+>=========================================
+>['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29']
+>Here are the information of our data:
+>=========================================
+>There are totally 25000 transactions.
+>There are 11427 kinds of product.
+>The most frequent product appear 14198 times.
+>The mean appearance times of product is 22.65432747002713 times.
 
 ## Algorithm brief introduction 
 
@@ -86,7 +86,7 @@ The ids for this set are  [38,3330,272,932,48,1143,905,987,1103,2951,3336,65,32,
 Run code:
 ```sh
 cd ../data
-awk "/38/&&/4/&&/3330/&&/272/&&/932/&&/48/&&/1143/&&/905/&&/987/&&/1103/&&/2951/&&/3336/&&/65/&&/32/&&/39/" retail_25k.dat 
+awk "/38/&&/3330/&&/272/&&/932/&&/48/&&/1143/&&/905/&&/987/&&/1103/&&/2951/&&/3336/&&/65/&&/32/&&/39/" retail_25k.dat 
 ```
 
 we got 4 lines of results, which means this method work well for longest frequent itemset in the transactions.
