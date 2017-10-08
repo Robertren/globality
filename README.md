@@ -23,7 +23,7 @@ pip install tqdm
 ```
 ### Data Understanding
 
-In order to better understand the data we are working on, author wrote a script to get some basic statics of the data which may help for the next step. To run the code:
+In order to better understand the data we are working on, author wrote a script to get some basic statistics of the data which may help for the next step. To run the code:
 ```
 cd src
 python data_analysis.py
@@ -34,10 +34,8 @@ The result we get shows:
 >['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29']
 
 >Here are the information of our data:
-
->There are totally 25000 transactions.
-
->There are 11427 kinds of product.
+There are totally 25000 transactions.
+There are 11427 kinds of product.
 
 >The most frequent product appear 14198 times.
 
