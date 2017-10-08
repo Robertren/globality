@@ -1,8 +1,8 @@
 # Globality code challenge
 
 In this project, You are given as input:
-•   A transaction database - a file consisting of a single row per transaction, with individual product's SKUs given as space–separated integers. A single transaction consisting of products with SKUs 1001, 1002 and 1003 would have a line that looks like: ‘1001 1002 1003' 
-•   A minimal ’support level’ parameter, sigma – a positive integer 
+* A transaction database - a file consisting of a single row per transaction, with individual product's SKUs given as space–separated integers. A single transaction consisting of products with SKUs 1001, 1002 and 1003 would have a line that looks like: ‘1001 1002 1003' 
+* A minimal ’support level’ parameter, sigma – a positive integer 
 
 An efficient algorithm for generating all frequent item sets of size 3 or more: groups of 3 or more items that appear together in the transactions log at least as often as the support level parameter value. For example, given a value of sigma = 2, all sets of 3 items that appear 2 or more times together in the transaction log should be returned.
 
@@ -59,7 +59,7 @@ After the first method, author did some research on frequent itemset problems an
 
 To run the code:
 ```
-cd src #if you already in /src, you can omit this
+cd src                  #if you already in /src, you can omit this
 python apriori.py 
 ```
 * problem for this method: after the experiment, this method doesn't work well for the whole set because there are so many frequent itemset, and everytime when we want to get candiate keys for next level. It will be extremely expensive. It will take a long time to run the code.
@@ -69,7 +69,7 @@ In order to decrease the times of calculate next level candidate keys, author pr
 
 To run the code:
 ```
-cd src #if you already in /src, you can omit this
+cd src                        #if you already in /src, you can omit this
 python final_aprior.py 
 ```
 * This method works well and takes about 20-25 minutes depending on the computer.
@@ -78,9 +78,9 @@ NOTE: For parameters of the code, please refer to the source code.
 
 ## Evaluation
 In order to evaluate the performance of author's algorithm. Author tried two ways
-* Compare with brute force method.
+* Compare with brute force method
 Since brute force method works really well for item set size 3 and 4. Author compared the brute force results with the results after running the final_aprior method and get the same results for size 3 and 4.
-* Choose special sample 
+* Choose special sample
 The longest frequent item set size is 14, the count for this item set is 4.
 The ids for this set are  [38,3330,272,932,48,1143,905,987,1103,2951,3336,65,32,39.]
 Run code:
